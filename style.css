@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: auto;
+    background-color: var(--Verylightgrayishblue);
+}
+:root{
+    
+--Red: hsl(1, 90%, 64%);
+--Blue: hsl(219, 85%, 26%);
+--White: hsl(0, 0%, 100%);
+--Verylightgrayishblue: hsl(210, 60%, 98%);
+--Lightgrayishblue1: hsl(211, 68%, 94%);
+--Lightgrayishblue2: hsl(205, 33%, 90%);
+--Grayishblue: hsl(219, 14%, 63%);
+--Darkgrayishblue: hsl(219, 12%, 42%);
+--Verydarkblue: hsl(224, 21%, 14%);
+}
+main .container{
+    margin: 70px 0 50px;
+}
+main .container .notifications_page{
+    background-color: var(--White);
+    border-radius: 10px;
+    height:850px;
+    width: 650px;
+    padding: 30px 25px;
+}
+main .container .notifications_page .notif{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+main .container .notifications_page .notif div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+main .container .notifications_page .notif div h1{
+    font-family:"Plus Jakarta Sans" ;
+    font-weight: 800;
+}
+main .container .notifications_page .notif div .num{
+    display: inline-block;
+    color: var(--White);
+    background-color: var(--Blue);
+    border-radius: 5px;
+    width: 40px;
+    height: 25px;
+    font-family:"Plus Jakarta Sans" ;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 5px;
+}
+main .container .notifications_page .notif .markall{
+    display: inline-block;
+    color: var(--Lightgrayishblue2);
+    font-family:"Plus Jakarta Sans" ;
+    font-weight: 500;
+    font-size: 16px;
+    transition: all 0.6s;
+    cursor: pointer;
+}
+main .container .notifications_page .notif .markall:hover{
+    color: var(--Darkgrayishblue);
+}
+main .container .notifications_page .notification_message{
+    width: 100%;
+    margin-top: 30px;
+}
+main .container .notifications_page .notification_message .not_mess{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: hsla(205, 33%, 90%, 0.342);
+    border-radius: 5px;
+    margin: 20px 0;
+    gap:25px;
+    padding:10px 0 10px;
+}
+main .container .notifications_page .notification_message .not_mess img{
+    width: 40px;
+    margin-left: 20px;
+}
+main .container .notifications_page .notification_message .not_mess .info .name{
+    display: inline-block;
+    font-family:"Plus Jakarta Sans" ;
+    font-weight: 500;
+    font-size: 15px;
+    color: var(--Verydarkblue);
+    transition: all 0.8s;
+    cursor: pointer;
+}
+main .container .notifications_page .notification_message .not_mess .info .name:hover{
+    color: var(--Blue);
+}
+main .container .notifications_page .notification_message .not_mess .info .des{
+    display: inline-block;
+    font-family:"Plus Jakarta Sans" ;
+    font-size: 14px;
+    color: var(--Darkgrayishblue);
+}
+main .container .notifications_page .notification_message .not_mess .info .nt-name{
+    display: inline-block;
+    font-family:"Plus Jakarta Sans" ;
+    font-weight: 500;
+    font-size: 15px;
+    color: var(--Darkgrayishblue);
+    transition: all 0.8s;
+    cursor: pointer;
+}
+main .container .notifications_page .notification_message .not_mess .info .che{
+    display: inline-block;
+    font-family:"Plus Jakarta Sans" ;
+    font-weight: 800;
+    font-size: 15px;
+    color: var(--Blue);
+    transition: all 0.8s;
+    cursor: pointer;
+}
+main .container .notifications_page .notification_message .not_mess .info .nt-name:hover{
+    color: var(--Blue);
+}
+
+main .container .notifications_page .notification_message .not_mess .info .circle{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--Red);
+    margin-left: 10px;
+}
+main .container .notifications_page .notification_message .not_mess .info .date{
+    font-family:"Plus Jakarta Sans" ;
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--Darkgrayishblue);
+}
+main .container .notifications_page .notification_message .message-send{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-radius: 5px;
+    margin: 20px 0;
+    gap:25px;
+    padding:10px 0 10px;    
+}
+main .container .notifications_page .notification_message .message-send img{
+    width: 40px;
+    margin-left: 20px;
+}
+main .container .notifications_page .notification_message .message-send .info .name{
+    display: inline-block;
+    font-family:"Plus Jakarta Sans" ;
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--Verydarkblue);
+}
+main .container .notifications_page .notification_message .message-send .info .des{
+    display: inline-block;
+    font-family:"Plus Jakarta Sans" ;
+    font-size: 14px;
+    color: var(--Darkgrayishblue);
+}
+main .container .notifications_page .notification_message .message-send .info .date{
+    font-family:"Plus Jakarta Sans" ;
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--Darkgrayishblue);
+}
+main .container .notifications_page .notification_message .message-send .info .message{
+    margin-top:20px;
+    border: 1px solid #e4dfdf;
+    padding: 15px;
+    font-family:"Plus Jakarta Sans" ;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 25px;
+    color: var(--Verydarkblue);
+    cursor: pointer;
+    transition: all 0.8s;
+}
+main .container .notifications_page .notification_message .message-send .info .message:hover{
+    background-color: hsl(204.7, 33.3%, 90%);
+}
+
+main .container .notifications_page .notification_message .react{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-radius: 5px;
+    margin: 20px 0;
+    gap:25px;
+    padding:10px 0 10px;
+}
+main .container .notifications_page .notification_message .react img{
+    width: 40px;
+    margin-left: 20px;
+}
+main .container .notifications_page .notification_message .react .info .name{
+    display: inline-block;
+    font-family:"Plus Jakarta Sans" ;
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--Verydarkblue);
+}
+main .container .notifications_page .notification_message .react .info .des{
+    display: inline-block;
+    font-family:"Plus Jakarta Sans" ;
+    font-size: 14px;
+    color: var(--Darkgrayishblue);
+}
+main .container .notifications_page .notification_message .react .info .nt-name{
+    display: inline-block;
+    font-family:"Plus Jakarta Sans" ;
+    font-weight: 500;
+    font-size: 15px;
+    color: var(--Darkgrayishblue);
+}
+main .container .notifications_page .notification_message .react .info .rate{
+    display: block;
+    font-family:"Plus Jakarta Sans" ;
+    font-weight: 500;
+    font-size: 15px;
+    color: var(--Darkgrayishblue);
+    margin-top: 5px;
+}
+main .container .notifications_page .notification_message .react .info .Club{
+    display: inline-block;
+    font-family:"Plus Jakarta Sans" ;
+    font-weight: 800;
+    font-size: 16px;
+    color: var(--Blue);
+    margin-left: 10px;
+}
+main .container .notifications_page .notification_message .react .info .date{
+    font-family:"Plus Jakarta Sans" ;
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--Darkgrayishblue);
+    margin-top:5px;
+}
+main .container .notifications_page .notification_message .react .Chess{
+    margin-left: 145px;
+}
+
+@media(max-width:1024px){
+    main .container {
+        margin: 0px 0 50px;
+      }
+}
+@media(max-width:768px){
+    main .container {
+        margin: 145px 0 50px;
+      }
+}
+@media(max-width:480px){
+    main .container .notifications_page {
+        width: 445px;
+        height: 990px;
+      }
+      main .container .notifications_page .notif div h1 {
+        font-size: 25px;
+      }
+      main .container .notifications_page .notification_message .react .Chess {
+        margin-left: 0;
+      }
+}
+@media(max-width:375px){
+    main .container .notifications_page {
+        width: 360px;
+      }
+      main .container .notifications_page .notif div h1 {
+        font-size: 20px;
+      }
+}
+
